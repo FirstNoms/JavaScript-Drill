@@ -1,21 +1,28 @@
-let country = "Nigeria";
-let continent = "Africa";
-let population = 5000000;
-console.log("My country is "+ country + " the giant of " + continent + " with the population of "+ population + " people.")
-
-//Data Types---------------------
-let isIsland = true;
-let language;
-console.log(typeof isIsland)
-console.log(typeof population)
-console.log(typeof country)
-console.log(typeof language)
-
-
-
-/**1. Declare a variable called 'isIsland' and set its value according to your
- country. The variable should hold a Boolean value. Also declare a variable
- 'language', but don't assign it any value yet
- 2. Log the types of 'isIsland', 'population', 'country' and 'language'
- to the consol
+/**BMI: mass / height**2
+ *
  * */
+
+let markMass = 78;
+let markHeight = 1.69;
+let johnMass = 92;
+let johnHeight = 1.95;
+
+let markSecondMass = 95;
+let markSecondHeight = 1.88;
+let johnSecondMass = 85;
+let johnSecondHeight = 1.76;
+
+let markBMI = markMass /(markHeight **2);
+let johnBMI = johnMass /(johnHeight ** 2);
+
+let markSecondBMI = markSecondMass/ (markSecondHeight * markSecondHeight);
+let johnSecondBMI = johnSecondMass/(johnSecondHeight * johnSecondHeight);
+
+console.log("This is Mark's first BMI result "+ markBMI);
+console.log("This is John's first BMI result "+ johnBMI);
+console.log("This is Mark's second BMI result "+ markSecondBMI);
+console.log("This is John's second BMI result "+ johnSecondBMI);
+
+let markHigherBMI = markBMI > johnBMI;
+let johnHigherBMI = johnSecondBMI > markSecondBMI;
+console.log(markHigherBMI, johnHigherBMI)
