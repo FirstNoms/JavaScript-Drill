@@ -1,80 +1,35 @@
-/**Drill.
- * BMI: mass / height**2
- *
+//Drill #2
+let dolphinScore1 = 96, dolphinScore2= 108, dolphinScore3= 89;
+let kaolaScore1= 88, kaolaScore2= 91, kaolaScore3 = 110;
+
+let dolphinAverageScore= (dolphinScore1 + dolphinScore2 + dolphinScore3)/3;
+let kaolaAverageScore = (kaolaScore1+kaolaScore2+kaolaScore3)/3;
+
+if(dolphinAverageScore > kaolaAverageScore){
+    console.log(`Dolphin Team scored ${dolphinAverageScore} and is the winner of the game ❤😍😒`)
+}else if(kaolaAverageScore > dolphinAverageScore){
+    console.log(`Kaola Team scored ${kaolaAverageScore} and is the winner of the game ❤😍😒`)
+}else if(kaolaAverageScore === dolphinAverageScore){
+    console.log(`Both Teams have the same score. There is a draw`)
+}
+
+
+
+
+/**1. Calculate the average score for each team, using the test data below
+ 2. Compare the team's average scores to determine the winner of the competition,
+ and print it to the console. Don't forget that there can be a draw, so test for that
+ as well (draw means they have the same average score)
+ 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+ team only wins if it has a higher score than the other team, and the same time a
+ score of at least 100 points. Hint: Use a logical operator to test for minimum
+ score, as well as multiple else-if blocks �
+ 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+ both teams have the same score and both have a score greater or equal 100
+ points. Otherwise, no team wins the trophy
+
+ Test data:
+ § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+ § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+ § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 10
  * */
-
-/** let markMass = 78;
-let markHeight = 1.69;
-let johnMass = 92;
-let johnHeight = 1.95;
-
-let markSecondMass = 95;
-let markSecondHeight = 1.88;
-let johnSecondMass = 85;
-let johnSecondHeight = 1.76;
-
-let markBMI = markMass /(markHeight **2);
-let johnBMI = johnMass /(johnHeight ** 2);
-
-let markSecondBMI = markSecondMass/ (markSecondHeight * markSecondHeight);
-let johnSecondBMI = johnSecondMass/(johnSecondHeight * johnSecondHeight);
-
-console.log("This is Mark's first BMI result "+ markBMI);
-console.log("This is John's first BMI result "+ johnBMI);
-console.log("This is Mark's second BMI result "+ markSecondBMI);
-console.log("This is John's second BMI result "+ johnSecondBMI);
-
-let markHigherBMI = markBMI > johnBMI;
-let johnHigherBMI = johnSecondBMI > markSecondBMI;
-console.log(markHigherBMI, johnHigherBMI)
-*/
-
-//TEMPLATE LITERALS
-/**let age = 50;
-let gender = "female";
-let job = "Nurse"
-let name = "ChiNomso"
-console.log(`My name is ${name}, I am a ${gender} ${job}, and I am ${age} years Old.`)
-*/
-
-//CONDITIONAL STATEMENTS
-
-/**let population = 130000000;
-let country ="Nigeria";
-const average = 33000000;
-
-if(population > average){
-    console.log(`${country}'s population is above the fixed average of ${average}`)
-}else{
-    console.log(`${country}'s population is ${(average-population)/2} below the fixed average of ${average}`)
-}
-*/
-
-/**const mysteryNumber = 5;
-const response = Number(prompt("Kindly guess my mystery Number"));
-
-if(response === mysteryNumber){
-    console.log(`Great Job well done! The Mystery Number is ${mysteryNumber}`)
-}else{
-    console.log(`${response} is wrong. Try again!`)
-    while (response!== mysteryNumber){
-        Number(prompt("Enter another number: "));
-    }
-}
- */
-
-const population = 15000000;
-let country ="Nigeria";
-const speakEnglish= "yes";
-
-let firstResponse = Number(prompt("what's your choice population?"));
-let secondResponse = prompt("speak english?")
-
-// console.log(prompt)
-if(firstResponse < population && secondResponse === speakEnglish){
-    console.log(`${country} is the best place for you!`)
-}else{
-    console.log(`kindly find another country!`)
-}
-
-
