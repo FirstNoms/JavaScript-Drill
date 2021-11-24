@@ -39,7 +39,7 @@ console.log(`My name is ${name}, I am a ${gender} ${job}, and I am ${age} years 
 
 //CONDITIONAL STATEMENTS
 
-let population = 130000000;
+/**let population = 130000000;
 let country ="Nigeria";
 const average = 33000000;
 
@@ -48,5 +48,17 @@ if(population > average){
 }else{
     console.log(`${country}'s population is ${(average-population)/2} below the fixed average of ${average}`)
 }
+*/
 
+const mysteryNumber = 5;
+const response = Number(prompt("Kindly guess my mystery Number"));
+
+if(response === mysteryNumber){
+    console.log(`Great Job well done! The Mystery Number is ${mysteryNumber}`)
+}else{
+    console.log(`${response} is wrong. Try again!`)
+    while (response!== mysteryNumber){
+        Number(prompt("Enter another number: "));
+    }
+}
 
