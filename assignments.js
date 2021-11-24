@@ -1,8 +1,9 @@
-/**BMI: mass / height**2
+/**Drill.
+ * BMI: mass / height**2
  *
  * */
 
-let markMass = 78;
+/** let markMass = 78;
 let markHeight = 1.69;
 let johnMass = 92;
 let johnHeight = 1.95;
@@ -26,3 +27,15 @@ console.log("This is John's second BMI result "+ johnSecondBMI);
 let markHigherBMI = markBMI > johnBMI;
 let johnHigherBMI = johnSecondBMI > markSecondBMI;
 console.log(markHigherBMI, johnHigherBMI)
+*/
+
+//TEMPLATE LITERALS
+let age = 50;
+let gender = "female";
+let job = "Nurse"
+let name = "ChiNomso"
+console.log(`My name is ${name}, I am a ${gender} ${job}, and I am ${age} years Old.`)
+
+/**1. Recreate the 'description' variable from the last assignment, this time
+ using the template literal synta
+ * */
