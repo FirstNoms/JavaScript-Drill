@@ -50,7 +50,7 @@ if(population > average){
 }
 */
 
-const mysteryNumber = 5;
+/**const mysteryNumber = 5;
 const response = Number(prompt("Kindly guess my mystery Number"));
 
 if(response === mysteryNumber){
@@ -61,4 +61,20 @@ if(response === mysteryNumber){
         Number(prompt("Enter another number: "));
     }
 }
+ */
+
+const population = 15000000;
+let country ="Nigeria";
+const speakEnglish= "yes";
+
+let firstResponse = Number(prompt("what's your choice population?"));
+let secondResponse = prompt("speak english?")
+
+// console.log(prompt)
+if(firstResponse < population && secondResponse === speakEnglish){
+    console.log(`${country} is the best place for you!`)
+}else{
+    console.log(`kindly find another country!`)
+}
+
 
