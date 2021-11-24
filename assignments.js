@@ -30,12 +30,23 @@ console.log(markHigherBMI, johnHigherBMI)
 */
 
 //TEMPLATE LITERALS
-let age = 50;
+/**let age = 50;
 let gender = "female";
 let job = "Nurse"
 let name = "ChiNomso"
 console.log(`My name is ${name}, I am a ${gender} ${job}, and I am ${age} years Old.`)
+*/
 
-/**1. Recreate the 'description' variable from the last assignment, this time
- using the template literal synta
- * */
+//CONDITIONAL STATEMENTS
+
+let population = 130000000;
+let country ="Nigeria";
+const average = 33000000;
+
+if(population > average){
+    console.log(`${country}'s population is above the fixed average of ${average}`)
+}else{
+    console.log(`${country}'s population is ${(average-population)/2} below the fixed average of ${average}`)
+}
+
+
