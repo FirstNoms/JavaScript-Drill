@@ -18,3 +18,29 @@ function describeCountry(country, population, capitalCity){
 describeCountry('Finland', 6000000, 'Helsinki');
 describeCountry("Nigeria", 10000000, "Abuja");
 describeCountry("France", 90000000, "Paris");
+
+
+//Function Declaration and Function expression
+/**Function declaration is any function declared using the 'function' keyword followed by a function name.
+ * Function expression is any function declared using the 'function' keyword but without a function name, also called an Anonymous function, and stored in a variable
+ * */
+
+//Function declaration vs Function Expression.
+
+//-----Function Declaration
+function percentageOfWorld1(country,population){
+    let worldPercentage = (population/7900) * 100;
+    console.log(`${country} has the population of ${population} people, so it's about ${worldPercentage}% of the world population`)
+    //return worldPercentage;
+}
+percentageOfWorld1('Nigeria', 12000000);
+percentageOfWorld1('Spain', 10000000);
+percentageOfWorld1('France', 100000)
+
+
+//Function Expression
+let percentageOfWorld2 =function (country,population){
+    let worldPercentage = (population/7900) * 100;
+    console.log(`${country} has the population of ${population} people, so it's about ${worldPercentage}% of the world population`)
+}
+percentageOfWorld2("Nigeria", 20000);
