@@ -41,6 +41,20 @@ percentageOfWorld1('France', 100000)
 //Function Expression
 let percentageOfWorld2 =function (country,population){
     let worldPercentage = (population/7900) * 100;
-    console.log(`${country} has the population of ${population} people, so it's about ${worldPercentage}% of the world population`)
+    return(`${country} has the population of ${population} people, so it's about ${worldPercentage}% of the world population`)
 }
 percentageOfWorld2("Nigeria", 20000);
+
+//Arrow Functions
+let percentageOfWorld3 = (country, population) => {
+    let worldPercentage = (population/7900) * 100;
+    return(`${country} has the population of ${population} people, so it's about ${worldPercentage}% of the world population`)
+}
+
+console.log(percentageOfWorld3("Nigeria", 13000));
+console.log(percentageOfWorld3("spain", 23000));
+
+let fruitJuice = apple => {
+    return(`I have ${apple} apples and i will make ${apple} cups of fruit juice.`)
+}
+console.log(fruitJuice(10));
