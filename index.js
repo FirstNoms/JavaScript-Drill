@@ -58,3 +58,17 @@ let fruitJuice = apple => {
     return(`I have ${apple} apples and i will make ${apple} cups of fruit juice.`)
 }
 console.log(fruitJuice(10));
+
+
+//Functions calling functions.
+function percentageOfWorld5(population){
+    let worldPercentage = (population/7900) * 100;
+    return worldPercentage;
+}
+
+function describePopulation (country, population){
+    return(console.log(`${country} has ${population}million people which is about ${percentageOfWorld5(population)}% of the world!`))
+}
+describePopulation("Nigeria", 103);
+describePopulation("Spain", 250);
+describePopulation("France", 25);
