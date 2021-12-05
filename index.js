@@ -65,6 +65,7 @@ function percentageOfWorld5(population){
     let worldPercentage = (population/7900) * 100;
     return worldPercentage;
 }
+//Coding Challenge on  Functions
 
 function describePopulation (country, population){
     return(console.log(`${country} has ${population}million people which is about ${percentageOfWorld5(population)}% of the world!`))
@@ -72,3 +73,22 @@ function describePopulation (country, population){
 describePopulation("Nigeria", 103);
 describePopulation("Spain", 250);
 describePopulation("France", 25);
+
+let checkWinner = (team1, team2,teamOneAverageScore,teamTwoAverageScore)=>{
+    if(teamOneAverageScore > teamTwoAverageScore){
+        return(console.log(`team ${team1} is the winner`));
+    }else if(teamTwoAverageScore > teamOneAverageScore){
+        return(console.log(`team ${team2} is the winner`));
+    }else{
+        return(console.log(`There is no winner`));
+    }
+}
+let calcAverage = (team, firstScore, secondScore, thirdScore)=>{
+    let average= (firstScore + secondScore + thirdScore)/3;
+    (console.log(`The Average score of team ${team} is ${average}`));
+    return average;
+}
+
+let teamOneAverageScore = calcAverage("Dolphin",90, 83,71 );
+let teamTwoAverageScore = calcAverage("Kaola", 105, 50, 99);
+checkWinner("Dolphin","Kaola", teamOneAverageScore, teamTwoAverageScore);
